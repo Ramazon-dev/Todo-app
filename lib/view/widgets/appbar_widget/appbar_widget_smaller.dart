@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todo_app/core/constants/app_colors.dart';
 import 'package:todo_app/core/constants/sizeconfig.dart';
 
 class AppBarWidgetSmaller extends StatelessWidget {

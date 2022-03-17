@@ -10,12 +10,12 @@ class BottomNavBarCubit extends Cubit<BottomNavBarState> {
   int pageIndex = 0;
   BottomNavBarCubit() : super(BottomNavBarInitial());
   List listOfPages = [
-    HomePage(),
-    TaskPage(),
+    const HomePage(),
+    const TaskPage(),
   ];
 
-  changePages(int tappedindex) async{
-  await Hive.openBox('remindersBox');
+  changePages(int tappedindex) async {
+    await Hive.openBox('remindersBox');
 
     pageIndex = tappedindex;
     emit(BottomNavBarInitial());

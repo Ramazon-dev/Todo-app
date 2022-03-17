@@ -3,10 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:todo_app/core/constants/app_colors.dart';
-import 'package:todo_app/core/constants/list_model.dart';
-import 'package:todo_app/core/constants/sizeconfig.dart';
 import 'package:todo_app/view/widgets/cubit/bottom_navbar_cubit/bottom_nav_bar_cubit.dart';
-import 'package:todo_app/view/widgets/elevated_button_list.dart';
 import 'package:todo_app/view/widgets/showmodalbottomsheet.dart';
 
 class BottomNavBarView extends StatefulWidget {
@@ -36,7 +33,7 @@ class _BottomNavBarViewState extends State<BottomNavBarView> {
         return Scaffold(
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerDocked,
-          floatingActionButton: ShowModalBottomSheetWidget(),
+          floatingActionButton: const ShowModalBottomSheetWidget(),
           body: _context.listOfPages[_context.pageIndex],
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
